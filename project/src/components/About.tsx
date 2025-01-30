@@ -34,7 +34,7 @@ const About = () => {
               As a third-year Computer Science student at the University of Guelph with a minor in Business Analytics,
               I'm passionate about bridging the gap between technical excellence and business solutions. My journey in
               software development is driven by a curiosity to learn and a desire to create meaningful applications
-              that solve real-world problems.
+              that solve real-world problems
             </p>
             
             <div className="space-y-6 mb-8">
@@ -65,7 +65,7 @@ const About = () => {
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/30 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 group"
             >
               <FileText className="h-5 w-5 mr-2 transition-transform group-hover:scale-110" />
-              View Resume
+              View Resume!
             </a>
           </div>
         </div>
