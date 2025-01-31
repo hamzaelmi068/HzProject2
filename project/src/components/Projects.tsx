@@ -21,7 +21,7 @@ const Projects = () => {
     {
   title: "To-Do List Web App",  
   description: "A full-stack task management application with user authentication and real-time updates.",
-  technologies: ["Javascript", "Node.js", "HTML", "CSS],
+  technologies: ["Javascript", "Node.js", "HTML", "CSS"],
  image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
   github: "https://github.com/hamzaelmi068/ToDoList",
   live: "https://hamzaelmi068.github.io/ToDoList/"
