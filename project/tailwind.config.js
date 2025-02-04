@@ -5,52 +5,52 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#22c55e',
-          600: '#16a34a',
-          700: '#15803d',
-          800: '#166534',
-          900: '#14532d',
+          50: '#f0f9ff', // Very light blue
+          100: '#e0f2fe', // Light blue
+          200: '#bae6fd', // Soft blue
+          300: '#7dd3fc', // Bright sky blue
+          400: '#38bdf8', // Vibrant blue
+          500: '#0ea5e9', // Strong blue
+          600: '#0284c7', // Deep blue
+          700: '#0369a1', // Darker blue
+          800: '#075985', // Navy blue
+          900: '#0c4a6e', // Very dark blue
         },
         secondary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
+          50: '#e6f4ff', // Pale blue
+          100: '#b3e0ff', // Light pastel blue
+          200: '#80ccff', // Soft cyan-blue
+          300: '#4db8ff', // Bright cyan-blue
+          400: '#1a9cff', // Vibrant cyan-blue
+          500: '#0077e6', // Rich blue
+          600: '#005bb3', // Deep cyan-blue
+          700: '#004080', // Dark cyan-blue
+          800: '#00264d', // Very dark cyan-blue
+          900: '#00101a', // Almost black with a blue tint
         },
         accent: {
-          50: '#fdf2f8',
-          100: '#fce7f3',
-          200: '#fbcfe8',
-          300: '#f9a8d4',
-          400: '#f472b6',
-          500: '#ec4899',
-          600: '#db2777',
-          700: '#be185d',
-          800: '#9d174d',
-          900: '#831843',
+          50: '#e6f7ff', // Pale cyan
+          100: '#b3e5fc', // Light cyan
+          200: '#80d4fa', // Soft cyan
+          300: '#4dc3f7', // Bright cyan
+          400: '#1ab1f5', // Vibrant cyan
+          500: '#0091ea', // Strong cyan-blue
+          600: '#0077b6', // Deep cyan-blue
+          700: '#005d83', // Dark cyan-blue
+          800: '#004359', // Very dark cyan-blue
+          900: '#002933', // Almost black with a cyan tint
         },
         neutral: {
-          50: '#fafafa',
-          100: '#f5f5f5',
-          200: '#e5e5e5',
-          300: '#d4d4d4',
-          400: '#a3a3a3',
-          500: '#737373',
-          600: '#525252',
-          700: '#404040',
-          800: '#262626',
-          900: '#171717',
+          50: '#f8fafc', // Very light gray with a blue tint
+          100: '#f1f5f9', // Light gray with a blue tint
+          200: '#e2e8f0', // Soft gray with a blue tint
+          300: '#cbd5e1', // Medium gray with a blue tint
+          400: '#94a3b8', // Gray with a blue tint
+          500: '#64748b', // Slate gray
+          600: '#475569', // Dark slate gray
+          700: '#334155', // Very dark slate gray
+          800: '#1e293b', // Almost black with a blue tint
+          900: '#0f172a', // Very dark blue-gray
         },
       },
       backgroundImage: {
