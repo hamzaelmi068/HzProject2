@@ -4,6 +4,20 @@ import { Calendar, MapPin } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
+      title: "Undergraduate Research Assistant",
+      company: "University of Guelph",
+      location: "Guelph, ON",
+      period: "May 2024 - Dec 2024",
+      description: [
+        "Conducted data analysis for research projects using statistical software and machine learning techniques",
+        "Developed and implemented AI models to optimize research outcomes in collaboration with faculty researchers",
+        "Managed complex datasets and maintained research databases with strict information governance protocols",
+        "Utilized generative AI tools for data synthesis and preliminary analysis of experimental results",
+        "Authored technical documentation and presented findings to interdisciplinary research teams",
+        "Applied critical thinking skills to evaluate research methodologies and propose improvements"
+      ]
+    },
+    {
       title: "Computer Science Student",
       company: "University of Guelph",
       location: "Guelph, ON",
@@ -14,7 +28,6 @@ const Experience = () => {
         "Contributing to open-source projects and university research initiatives"
       ]
     },
-    // Add more experiences as needed
   ];
 
   return (
