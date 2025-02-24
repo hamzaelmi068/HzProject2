@@ -18,7 +18,7 @@ const Experience = () => {
       ]
     },
     {
-      title: "Computer Science Student",
+      title: "Computer Science Undergraduate Student",
       company: "University of Guelph",
       location: "Guelph, ON",
       period: "2022 - Present",
