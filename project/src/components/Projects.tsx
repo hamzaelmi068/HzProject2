@@ -31,7 +31,7 @@ const Projects = () => {
       description: "A predictive analytics tool for Premier League matches, leveraging machine learning and web scraping.",
       technologies: ["Jupyter", "Flask", "Python", "JavaScript"],
       image: "https://images.unsplash.com/photo-1511886929837-354d827aae26?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      github: "https://github.com/yourusername/epl-predictor",
+      github: "https://github.com/hamzaelmi068/PremierLeague_webscraper",
     },
     {
       title: "ZooScope Classifier (ML)",
