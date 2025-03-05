@@ -31,7 +31,7 @@ const About = () => {
           
           <div>
             <p className="text-gray-600 mb-6">
-              As a third-year Computer Science student at the University of Guelph with a minor in Business Analytics,
+              As a Computer Science student at the University of Guelph with a minor in Business Analytics,
               I'm passionate about bridging the gap between technical excellence and business solutions. My journey in
               software development is driven by a curiosity to learn and a desire to create meaningful applications
               that solve real-world problems
