@@ -16,7 +16,7 @@ const Hero = () => {
                 options={{
                   strings: [
                     "Hey there, my name is Hamza!",
-                    "I'm a Third-year Computer Science student at the University of Guelph.",
+                    "I'm a third-year Computer Science student at the University of Guelph.",
                     "Currently seeking 2025 Summer SWE internship opportunities.",
                     "Passionate about full-stack development and data analytics!"
                   ],
