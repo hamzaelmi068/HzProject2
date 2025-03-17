@@ -7,7 +7,7 @@ const Experience = () => {
       title: "Undergraduate Research Assistant",
       company: "University of Guelph",
       location: "Guelph, ON",
-      period: "May 2024 - Dec 2024",
+      period: "August 2024 - Dec 2024",
       description: [
         "Conducted data analysis for research projects using statistical software and machine learning techniques",
         "Developed and implemented AI models to optimize research outcomes in collaboration with faculty researchers",
