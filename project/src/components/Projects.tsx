@@ -13,7 +13,7 @@ const Projects = () => {
     },
     {
       title: "Stool Health Analyzer  ",
-    description: "    (Note: In Progress) -                                                                                   AI-powered medical analysis system using computer vision to assess stool samples based on clinical metrics.",
+    description: "                                                                                  AI-powered medical analysis system using computer vision to assess stool samples based on clinical metrics.",
     technologies: ["TypeScript", "Python", "FastAPI", "OpenCV", "Docker"],
     image: "/poop1.jpg",
     github: "https://github.com/hamzaelmi068/StoolAnalysisX",
