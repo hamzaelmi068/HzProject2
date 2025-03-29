@@ -15,7 +15,7 @@ const Projects = () => {
     title: "FinanceScope",
     description: "Financial dashboard for comparing living costs & salaries across cities worldwide with AI-driven budgeting advice.",
     technologies: ["TypeScript", "React", "Tailwind CSS", "Python", "RapidAPI", "Power BI"],
-    image: "/finance_scope.png",
+    image: "/scope_finance.png",
     github: "https://github.com/hamzaelmi068/FinanceScope",
     live: "https://finance-scope.vercel.app/"
   },
