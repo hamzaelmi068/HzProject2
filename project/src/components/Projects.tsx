@@ -1,16 +1,27 @@
 import React from 'react';
 import { Github, ExternalLink } from 'lucide-react';
-
+ 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Focus-TreeX",
-      description: "A productivity app that grows a tree as you focus, featuring streaks, AI coaching, and unlockable trees.",
-      technologies: ["TypeScript", "React", "Tailwind CSS"],
-      image: "/1349296.jpg",
-      github: "https://github.com/hamzaelmi068/Focus-TreeX",
-      live: "https://focus-tree-x3.vercel.app/"
-    },
+ const projects = [
+  {
+    title: "LughatulQuran",
+    description: "A Quranic Arabic vocabulary learning app with personalized spaced repetition, dark/light theming, and Supabase-powered user progress tracking.",
+    technologies: ["TypeScript", "React", "Supabase", "Tailwind CSS", "Vite", "Framer Motion"],
+    image: "/lughatulquran-placeholder.png", // Update when you have your logo
+    github: "https://github.com/hamzaelmi068/lughatul-quran",
+    live: "https://lughatul-quran.vercel.app"
+    description: "🚧 In progress – A Quranic Arabic vocabulary learning app with personalized spaced repetition, dark/light theming, and Supabase-powered user progress tracking.",
+
+  },
+  {
+    title: "Focus-TreeX",
+    description: "A productivity app that grows a tree as you focus, featuring streaks, AI coaching, and unlockable trees.",
+    technologies: ["TypeScript", "React", "Tailwind CSS"],
+    image: "/1349296.jpg",
+    github: "https://github.com/hamzaelmi068/Focus-TreeX",
+    live: "https://focus-tree-x3.vercel.app/"
+  },
+   
     {
     title: "FinanceScope",
     description: "Financial dashboard for comparing living costs & salaries across cities worldwide with AI-driven budgeting advice.",
