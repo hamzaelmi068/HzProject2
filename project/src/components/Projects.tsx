@@ -9,7 +9,7 @@ const Projects = () => {
     technologies: ["TypeScript", "React", "Supabase", "Tailwind CSS", "Vite", "Framer Motion"],
     image: "/lughatulquran-placeholder.png", // Update when you have your logo
     github: "https://github.com/hamzaelmi068/lughatul-quran",
-    live: "https://lughatul-quran.vercel.app"
+    live: "https://lughatul-quran.vercel.app", 
     description: "🚧 In progress – A Quranic Arabic vocabulary learning app with personalized spaced repetition, dark/light theming, and Supabase-powered user progress tracking.",
 
   },
