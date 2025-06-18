@@ -23,7 +23,7 @@ const Blog = () => {
             In the meantime, feel free to check out my Medium profile and follow me there.
           </p>
           <a
-            href="https://medium.com/@hamzaelmi067"
+            href="https://medium.com/@hamza067"
             target="_blank"
             rel="noopener noreferrer"
             className="button-primary inline-flex items-center gap-2 group"
