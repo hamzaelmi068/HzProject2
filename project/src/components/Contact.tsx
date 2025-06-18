@@ -40,34 +40,36 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-primary-50 to-white">
+    <section id="contact" className="py-20 bg-gradient-to-b from-white to-primary-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+        <h2 className="section-title">
           Get In Touch
-          <span className="block w-16 h-1 bg-primary-600 mx-auto mt-4"></span>
+          <span className="block w-16 h-1 bg-gradient-to-r from-primary-600 to-primary-400 mx-auto mt-4 rounded-full"></span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Information Card */}
-          <div className="card p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div className="card p-8 bounce-in">
             <h3 className="text-xl font-semibold mb-4 text-gray-900">Contact Information</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-6 leading-relaxed">
               I'm currently looking for new opportunities. Whether you have a question
               or just want to say hi, I'll try my best to get back to you within 24 hours!
             </p>
             
             <div className="space-y-4">
               <div className="flex items-center group">
-                <Mail className="h-5 w-5 mr-2 text-gray-600 transition-transform group-hover:scale-110" />
+                <div className="p-2 bg-primary-100 rounded-lg mr-3 group-hover:bg-primary-200 transition-colors duration-300">
+                  <Mail className="h-5 w-5 text-primary-600" />
+                </div>
                 <a
                   href="mailto:helmi@uoguelph.ca"
-                  className="text-gray-600 hover:text-primary-600 transition-colors"
+                  className="text-gray-600 hover:text-primary-600 transition-colors duration-300 flex-1"
                 >
                   helmi@uoguelph.ca
                 </a>
                 <button 
                   onClick={copyEmail}
-                  className="ml-2 p-1 text-gray-500 hover:text-primary-600 rounded hover:bg-gray-100 transition-colors"
+                  className="ml-2 p-2 text-gray-500 hover:text-primary-600 rounded-lg hover:bg-primary-50 transition-all duration-300 active:scale-95"
                   aria-label="Copy email"
                   title="Copy email"
                 >
@@ -79,33 +81,33 @@ const Contact = () => {
                 </button>
               </div>
               
-              <div className="flex space-x-4 pt-2">
+              <div className="flex space-x-4 pt-4">
                 <a
                   href="https://github.com/hamzaelmi068"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-primary-600 transition-all hover:scale-110"
+                  className="p-3 bg-gray-100 hover:bg-primary-100 text-gray-600 hover:text-primary-600 rounded-lg transition-all duration-300 hover:scale-110 active:scale-95"
                   aria-label="GitHub profile"
                 >
-                  <Github className="h-7 w-7" />
+                  <Github className="h-6 w-6" />
                 </a>
                 <a
                   href="https://linkedin.com/in/hamza-elmi-b9827a231"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-primary-600 transition-all hover:scale-110"
+                  className="p-3 bg-gray-100 hover:bg-primary-100 text-gray-600 hover:text-primary-600 rounded-lg transition-all duration-300 hover:scale-110 active:scale-95"
                   aria-label="LinkedIn profile"
                 >
-                  <Linkedin className="h-7 w-7" />
+                  <Linkedin className="h-6 w-6" />
                 </a>
               </div>
             </div>
           </div>
           
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="card p-8 space-y-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+          <form onSubmit={handleSubmit} className="card p-8 space-y-6 bounce-in" style={{ animationDelay: '0.2s' }}>
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                 Name
               </label>
               <input
@@ -114,14 +116,14 @@ const Contact = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 hover:border-primary-300"
                 required
                 aria-required="true"
               />
             </div>
             
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                 Email
               </label>
               <input
@@ -130,14 +132,14 @@ const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 hover:border-primary-300"
                 required
                 aria-required="true"
               />
             </div>
             
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                 Message
               </label>
               <textarea
@@ -146,7 +148,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 hover:border-primary-300 resize-none"
                 required
                 aria-required="true"
               />
@@ -154,7 +156,7 @@ const Contact = () => {
             
             <button
               type="submit"
-              className="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-300 flex justify-center items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+              className="button-primary w-full flex justify-center items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed text-lg py-4"
               disabled={status === 'loading'}
             >
               {status === 'loading' ? (
@@ -169,7 +171,7 @@ const Contact = () => {
             
             {/* Status Messages */}
             {status === 'success' && (
-              <div className="p-3 bg-green-50 text-green-700 rounded-md flex items-start gap-2">
+              <div className="p-4 bg-green-50 text-green-700 rounded-lg flex items-start gap-3 border border-green-200 bounce-in">
                 <Check className="h-5 w-5 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="font-medium">Message sent successfully!</p>
@@ -179,7 +181,7 @@ const Contact = () => {
             )}
             
             {status === 'error' && (
-              <div className="p-3 bg-red-50 text-red-700 rounded-md flex items-start gap-2">
+              <div className="p-4 bg-red-50 text-red-700 rounded-lg flex items-start gap-3 border border-red-200 bounce-in">
                 <AlertTriangle className="h-5 w-5 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="font-medium">Failed to send message</p>

@@ -1,84 +1,118 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Code, Database, Layout, FileText } from 'lucide-react';
 
 const About = () => {
+  const [skillsVisible, setSkillsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setSkillsVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      observer.observe(aboutSection);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   const skills = [
     {
       category: 'Frontend',
       icon: <Layout className="h-6 w-6" />,
-      technologies: ['HTML', 'CSS', 'React.js', 'JavaScript', 'TypeScript', 'Material UI', 'SASS', 'Flask', 'Swift'],
+      technologies: [
+        { name: 'HTML', level: 90 },
+        { name: 'CSS', level: 85 },
+        { name: 'React.js', level: 88 },
+        { name: 'JavaScript', level: 85 },
+        { name: 'TypeScript', level: 80 },
+        { name: 'Material UI', level: 75 },
+        { name: 'SASS', level: 70 },
+        { name: 'Swift', level: 65 }
+      ],
     },
     {
       category: 'Backend',
       icon: <Database className="h-6 w-6" />,
-      technologies: ['Python', 'C', 'Java', 'C#', 'Node.js', 'PostgreSQL', 'Git'],
+      technologies: [
+        { name: 'Python', level: 90 },
+        { name: 'C', level: 85 },
+        { name: 'Java', level: 80 },
+        { name: 'C#', level: 75 },
+        { name: 'Node.js', level: 78 },
+        { name: 'PostgreSQL', level: 82 },
+        { name: 'Git', level: 88 }
+      ],
     },
   ];
 
   return (
-    <section id="about" className="py-20 bg-white/90 backdrop-blur-sm">
+    <section id="about" className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
+        <h2 className="section-title bounce-in">About Me</h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="group">
             <img
               src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
               alt="Coding workspace"
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg transition-all duration-500 group-hover:shadow-2xl group-hover:scale-105"
             />
           </div>
           
           <div>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-8 text-lg leading-relaxed">
               As a Computer Science student at the University of Guelph with a minor in Business Analytics,
               I'm passionate about bridging the gap between technical excellence and business solutions. My journey in
               software development is driven by a curiosity to learn and a desire to create meaningful applications
-              that solve real-world problems
+              that solve real-world problems.
             </p>
             
-            <div className="space-y-6 mb-8">
-              {skills.map((skillSet) => (
-                <div key={skillSet.category}>
-                  <div className="flex items-center mb-2">
-                    {skillSet.icon}
-                    <h3 className="text-xl font-semibold ml-2">{skillSet.category}</h3>
+            <div className="space-y-8 mb-8">
+              {skills.map((skillSet, index) => (
+                <div key={skillSet.category} className="bounce-in" style={{ animationDelay: `${index * 0.2}s` }}>
+                  <div className="flex items-center mb-4">
+                    <div className="p-2 bg-primary-100 rounded-lg mr-3">
+                      {skillSet.icon}
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900">{skillSet.category}</h3>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {skillSet.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
-                      >
-                        {tech}
-                      </span>
+                  <div className="space-y-3">
+                    {skillSet.technologies.map((tech, techIndex) => (
+                      <div key={tech.name} className="group">
+                        <div className="flex justify-between items-center mb-1">
+                          <span className="text-sm font-medium text-gray-700">{tech.name}</span>
+                          <span className="text-sm text-gray-500">{tech.level}%</span>
+                        </div>
+                        <div className="skill-bar">
+                          <div 
+                            className="skill-progress"
+                            style={{ 
+                              width: skillsVisible ? `${tech.level}%` : '0%',
+                              transitionDelay: `${techIndex * 0.1}s`
+                            }}
+                          />
+                        </div>
+                      </div>
                     ))}
                   </div>
                 </div>
               ))}
             </div>
 
-
-           {/* 
-              <a
-                href="/Elmi_Hamza_Resume_G14.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/30 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 group"
-              >
-                <FileText className="h-5 w-5 mr-2 transition-transform group-hover:scale-110" />
-                View Resume!
-              </a>
-*/}
-
-<a
-  href="#"
-  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/30 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 group"
->
-  <FileText className="h-5 w-5 mr-2 transition-transform group-hover:scale-110" />
-  Resume available upon request
-</a>
-            
+            <a
+              href="#"
+              className="button-primary inline-flex items-center gap-2 group"
+            >
+              <FileText className="h-5 w-5 transition-transform group-hover:scale-110" />
+              Resume available upon request
+            </a>
           </div>
         </div>
       </div>
