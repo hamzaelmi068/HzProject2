@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, BookOpen } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ const Header = () => {
       setIsScrolled(window.scrollY > 20);
 
       // Update active section based on scroll position
-      const sections = ['about', 'experience', 'projects', 'contact'];
+      const sections = ['about', 'experience', 'projects', 'blog', 'contact'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -32,6 +32,7 @@ const Header = () => {
     { label: 'About', href: '#about' },
     { label: 'Experience', href: '#experience' },
     { label: 'Projects', href: '#projects' },
+    { label: 'Blog', href: '#blog' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -94,6 +95,17 @@ const Header = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
+                href="https://medium.com/@hamzaelmi067" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={`transition-colors duration-300 ${
+                  isScrolled ? 'text-gray-600 hover:text-primary-600' : 'text-white/90 hover:text-white'
+                }`}
+                title="Read my blog on Medium"
+              >
+                <BookOpen className="h-5 w-5" />
+              </a>
+              <a 
                 href="mailto:helmi@uoguelph.ca" 
                 className={`transition-colors duration-300 ${
                   isScrolled ? 'text-gray-600 hover:text-primary-600' : 'text-white/90 hover:text-white'
@@ -133,11 +145,14 @@ const Header = () => {
               </a>
             ))}
             <div className="flex items-center space-x-4 py-2">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
+              <a href="https://github.com/hamzaelmi068" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
+              <a href="https://linkedin.com/in/hamza-elmi-b9827a231" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
                 <Linkedin className="h-5 w-5" />
+              </a>
+              <a href="https://medium.com/@hamzaelmi067" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
+                <BookOpen className="h-5 w-5" />
               </a>
               <a href="mailto:helmi@uoguelph.ca" className="text-gray-600 hover:text-primary-600 transition-colors">
                 <Mail className="h-5 w-5" />
