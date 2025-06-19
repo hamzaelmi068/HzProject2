@@ -95,7 +95,7 @@ const Header = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="https://medium.com/@hamzaelmi067" 
+                href="https://medium.com/@hamza067" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={`transition-colors duration-300 ${
