@@ -151,7 +151,7 @@ const Header = () => {
               <a href="https://linkedin.com/in/hamza-elmi-b9827a231" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://medium.com/@hamzaelmi067" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
+              <a href="https://medium.com/@hamza067" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
                 <BookOpen className="h-5 w-5" />
               </a>
               <a href="mailto:helmi@uoguelph.ca" className="text-gray-600 hover:text-primary-600 transition-colors">
