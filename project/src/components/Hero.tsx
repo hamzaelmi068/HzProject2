@@ -7,7 +7,6 @@ const Hero = () => {
     <section className="min-h-screen relative flex items-center justify-center overflow-hidden">
       {/* Semi-transparent overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary-900/70 via-primary-800/60 to-primary-700/50"></div>
-
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-left animate-fade-in order-2 md:order-1">
@@ -16,8 +15,8 @@ const Hero = () => {
                 options={{
                   strings: [
                     "Hey there, my name is Hamza!",
-                    "I'm a third-year Computer Science student at the University of Guelph.",
-                    "Currently seeking 2025 Summer SWE internship opportunities.",
+                    "I'm a fourth-year Computer Science student at the University of Guelph.",
+                    "Actively seeking Winter 2026 tech internship opportunities.",
                     "Passionate about full-stack development and data analytics!"
                   ],
                   autoStart: true,
@@ -44,7 +43,6 @@ const Hero = () => {
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
           </div>
-
           <div className="order-1 md:order-2 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full blur-2xl opacity-50 animate-pulse"></div>
@@ -62,3 +60,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
