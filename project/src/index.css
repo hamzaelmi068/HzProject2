@@ -20,6 +20,16 @@
   }
 }
 
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
 @layer components {
   .nav-link {
     @apply relative text-gray-600 hover:text-primary-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary-500 after:transition-all after:duration-300 hover:after:w-full;
