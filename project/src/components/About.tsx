@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Code, Database, Layout, FileText } from 'lucide-react';
-//import FadeInSection from './FadeInSection';
+import FadeInSection from './FadeInSection';
 
 const About = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
