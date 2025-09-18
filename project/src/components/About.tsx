@@ -19,16 +19,16 @@ const About = () => {
     <section id="about" className="py-20 bg-white/90 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
-        
+
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
               src="/IMG_9865.webp"
-              alt="Coding workspace"
-              className="rounded-lg shadow-lg"
+              alt="My Photo"
+              className="rounded-lg shadow-lg max-w-sm mx-auto opacity-0 animate-fadeIn transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
             />
           </div>
-          
+
           <div>
             <p className="text-gray-600 mb-6">
               As a Computer Science student at the University of Guelph with a minor in Business Analytics,
@@ -36,7 +36,7 @@ const About = () => {
               software development is driven by a curiosity to learn and a desire to create meaningful applications
               that solve real-world problems
             </p>
-            
+
             <div className="space-y-6 mb-8">
               {skills.map((skillSet) => (
                 <div key={skillSet.category}>
@@ -58,32 +58,18 @@ const About = () => {
               ))}
             </div>
 
-
-           {/* 
-              <a
-                href="/Elmi_Hamza_Resume_G14.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/30 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 group"
-              >
-                <FileText className="h-5 w-5 mr-2 transition-transform group-hover:scale-110" />
-                View Resume!
-              </a>
-*/}
-
-<a
-  href="#"
-  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/30 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 group"
->
-  <FileText className="h-5 w-5 mr-2 transition-transform group-hover:scale-110" />
-  Resume available upon request
-</a>
-            
+            <a
+              href="#"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/30 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 group"
+            >
+              <FileText className="h-5 w-5 mr-2 transition-transform group-hover:scale-110" />
+              Resume available upon request
+            </a>
           </div>
         </div>
       </div>
     </section>
   );
 };
-
 export default About;
+
