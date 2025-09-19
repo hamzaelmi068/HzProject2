@@ -67,6 +67,7 @@ const About = () => {
                 </p>
                 <p className="text-gray-600 leading-relaxed">
                   My journey is driven by curiosity and a desire to create meaningful applications that solve real-world problems.
+                  Outside of tech, I enjoy photography, playing competitive sports, and chess.
                 </p>
               </div>
               
